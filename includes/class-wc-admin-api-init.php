@@ -103,6 +103,7 @@ class WC_Admin_Api_Init {
 	 */
 	public function rest_api_init() {
 		require_once WC_ADMIN_ABSPATH . 'includes/api/class-wc-admin-rest-admin-notes-controller.php';
+		require_once WC_ADMIN_ABSPATH . 'includes/api/class-wc-admin-rest-admin-note-action-controller.php';
 		require_once WC_ADMIN_ABSPATH . 'includes/api/class-wc-admin-rest-coupons-controller.php';
 		require_once WC_ADMIN_ABSPATH . 'includes/api/class-wc-admin-rest-data-controller.php';
 		require_once WC_ADMIN_ABSPATH . 'includes/api/class-wc-admin-rest-data-countries-controller.php';
@@ -146,6 +147,7 @@ class WC_Admin_Api_Init {
 			'woocommerce_admin_rest_controllers',
 			array(
 				'WC_Admin_REST_Admin_Notes_Controller',
+				'WC_Admin_REST_Admin_Note_Action_Controller',
 				'WC_Admin_REST_Coupons_Controller',
 				'WC_Admin_REST_Customers_Controller',
 				'WC_Admin_REST_Data_Controller',
