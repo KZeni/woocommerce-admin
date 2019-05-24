@@ -2,6 +2,7 @@
 /**
  * External dependencies
  */
+import { __ } from '@wordpress/i18n';
 import { Component, createElement } from '@wordpress/element';
 
 /**
@@ -9,6 +10,7 @@ import { Component, createElement } from '@wordpress/element';
  */
 import Plugins from './steps/plugins';
 import Start from './steps/start/';
+import StoreDetails from './steps/store-details';
 import './style.scss';
 
 const getSteps = () => {
@@ -21,6 +23,11 @@ const getSteps = () => {
 	steps.push( {
 		key: 'plugins',
 		container: Plugins,
+	} );
+	steps.push( {
+		key: 'store-details',
+		container: StoreDetails,
+		label: __( 'Store Details', 'woocommerce-admin' ),
 	} );
 
 	return steps;

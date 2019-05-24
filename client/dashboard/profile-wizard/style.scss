@@ -11,6 +11,8 @@
 	}
 
 	.woocommerce-card {
+		margin-top: $gap;
+
 		h1,
 		h2,
 		h3 {
@@ -68,6 +70,16 @@
 		font-size: 24px;
 		line-height: 32px;
 		font-weight: 400;
+		margin-bottom: $gap-smaller;
+	}
+
+	.woocommerce-profile-wizard__header-subtitle {
+		color: $muriel-gray-600;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		margin-top: $gap-smaller;
+		margin-bottom: $gap;
 	}
 
 	.woocommerce-profile-wizard__container {
@@ -122,6 +134,16 @@
 
 	#wpbody {
 		padding-top: 0;
+	}
+
+	.woocommerce-profile-wizard__input-help {
+		color: $muriel-gray-600;
+		font-size: 12px;
+		padding-left: $gap-smaller;
+
+		&.is-error {
+			color: $muriel-red-500;
+		}
 	}
 }
 
